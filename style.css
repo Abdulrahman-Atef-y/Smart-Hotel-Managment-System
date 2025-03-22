@@ -1,15 +1,32 @@
 /*@import url("https://fonts.googleapis.com/css2?family=Alata&family=Comic+Neue:ital,wght@0,400;0,700;1,700&family=Montserrat:wght@400;700&family=Mulish:wght@300;400&family=Open+Sans:wght@400;600&family=Poppins:wght@400;500&family=Roboto:wght@400;500&display=swap");
 */* {
     font-family: "Roboto", sans-serif;
+    background-image: url(https://s32907.pcdn.co/wp-content/uploads/2019/09/escrit%C3%B3rios-modernos-19.jpg);
+    background-size: cover;
+
+    /* Center the image */
+    background-position: center;
+
+    /* Prevent the image from repeating */
+    background-repeat: no-repeat;
+
+    /* Fix the background image so it doesn't scroll with the content */
+    background-attachment: fixed;
+
+    /* Optional: Add a fallback background color in case the image fails to load */
+    background-color: #f0f0f0;
+
+    
 }
-.login-outer-container {
-  min-height: 100vh;
-}
+
+
 .login-container {
   margin-top: 90px;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  
 }
 .login-area {
   width: 500px;
@@ -61,33 +78,20 @@ label {
 }
 
 .login-btn {
-  color: #fff;
-  background-color: #de5e04;
+  color: #000000;
+  background-color: #2779d6;
   border-color: #d25904;
   border: none;
   /* padding: 5px 0px; */
   border-radius: 4px;
-  height: 50px;
+  height: 60px;
   margin-top: 20px;
   margin-bottom: 15px;
   font-size: 19px;
   cursor: pointer;
 }
-.prompt {
-  text-align: center;
-  margin: 12px 0px 18px 0px;
-}
-.social-login {
-  display: flex;
-  flex-direction: column;
-}
-.fa-github{
-    margin-right: 7px;
-    font-size: 22px !important;
-}
-.fa-google{
-    font-size: 20px;
-}
+
+
 .google-signin {
   background-color: #dc4133;
   border: none;
