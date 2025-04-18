@@ -5,10 +5,121 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
 </head>
 <body>
     
+
+
+
+    <nav>
+        <a href="#"><img src="/img/logo.png" alt="Logo" class="logo"></a>
+        <div class="right">
+            <a href="#">Home</a>
+            <a href="#">Rooms</a>
+            <a href="#footer">Contact</a>
+            <a href="#" class="login" id="login">Log in</a>
+        </div>
+    </nav>
+
+
+    <div class="intro">
+        <img src="img/back.webp" alt="Background" class="hhh">
+        <div class="h1">
+            <h1>Your Gateway to Smart Hospitality: Discover, Manage, Enjoy!</h1>
+            <input type="search" class="search" placeholder="Search">
+        </div>
+    </div>
+
+
+
+    <section class="features-section">
+        <h2 class="features-title">Features</h2>
+        <ul class="features-list">
+            <li class="feature-item">
+                <i class="fa-regular fa-clock feature-icon icon-clock"></i>
+                <span class="feature-text">24/7 Booking</span>
+            </li>
+            <li class="feature-item">
+                <i class="fa-solid fa-fingerprint feature-icon icon-info"></i>
+                <span class="feature-text">Smart Check-In</span>
+            </li>
+            <li class="feature-item">
+                <i class="fa-regular fa-lightbulb feature-icon icon-lightbulb"></i>
+                <span class="feature-text">IoT Control</span>
+            </li>
+            <li class="feature-item">
+                <i class="fa-regular fa-message feature-icon icon-chat"></i>
+                <span class="feature-text">Chatbot Support</span>
+            </li>
+        </ul>
+    </section>
+
+    <section class="rooms-section">
+        <h2>Available Rooms</h2>
+        <div class="rooms">
+        
+            <div class="room">
+                <img src="img/back.webp" alt="" class="img">
+                <p class="cap">Single <span class="price">$20.00</span></p>
+                
+                <input type="button" class="button" value="Book Now">
+            </div>
+            <div class="room">
+                <img src="img/back.webp" alt="" class="img">
+                <p class="cap">Single <span class="price">$20.00</span></p>
+                <input type="button" class="button" value="Book Now">
+            </div>
+            <div class="room">
+            
+                <img src="img/back.webp" alt="" class="img">
+                <p class="cap">Single <span class="price">$20.00</span></p>
+                <input type="button" class="button" value="Book Now">
+            </div>
+            <div class="room">
+            
+                <img src="img/back.webp" alt="" class="img">
+                <p class="cap">Single <span class="price">$20.00</span></p>
+                <input type="button" class="button" value="Book Now">
+            </div>
+            <div class="room">
+            
+                <img src="img/back.webp" alt="" class="img">
+                <p class="cap">Single <span class="price">$20.00</span></p>
+                <input type="button" class="button" value="Book Now">
+            </div>
+            <div class="room">
+            
+                <img src="img/back.webp" alt="" class="img">
+                <p class="cap">Single <span class="price">$20.00</span></p>
+                <input type="button" class="button" value="Book Now">
+            </div>
+            
+        
+    </div>
+    </section>
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h4>MyWebsite</h4>
+                <p>© 2025 MyWebsite, Inc.</p>
+            </div>
+            <nav class="footer-nav">
+                <a href="/">Home</a>
+                <a href="/about">About</a>
+                <a href="/contact">Contact</a>
+                <a href="/privacy">Privacy</a>
+            </nav>
+            <div class="footer-social">
+                <a href="#" id="footer"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+
 
     <div class="wrapper">
         <span class="icon-close">
@@ -47,17 +158,21 @@
                     <input type="text" required>
                     <label>Name</label>
                 </div>
+                
                 <div class="input-box">
-                    <span class="icon"><ion-icon name="home"></ion-icon></ion-icon></span>
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
                     <input type="text" required>
-                    <label>Address</label>
+                    <label>Email</label>
                 </div>
+
                 <div class="input-box">
                     <span class="icon"><ion-icon name="call"></ion-icon></ion-icon></span>
                     <input type="tel" id="phone" name="phone" required placeholder=" ">
                     <label>Phone</label>
                 </div>
                 
+                
+
                 <div class="input-box">
                     <span class="icon" id="pss"><ion-icon name="lock-closed"></ion-icon></span>
                     <input type="password" required id="lpss">
@@ -78,7 +193,7 @@
                     </label>
                 </div>
                 
-                <p id="error-msg" style="color: rgb(44, 7, 7); display: none;"><ion-icon name="close"></ion-icon>Passwords do not match</p>
+                <p id="error-msg" style="color: rgb(44, 7, 7); display: none;">Passwords do not match</p>
                 <p id="terms-error" style="color: rgb(44, 7, 7); display: none;">You must accept the terms to continue.</p>
                 
                 
@@ -104,7 +219,7 @@
 
 
 
-
+    
 
 
 
