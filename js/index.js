@@ -91,6 +91,8 @@ document.getElementById("submit-btn").addEventListener("click", function (e) {
 document.querySelector('.icon-close').addEventListener('click', function () {
     const wrapper = document.querySelector('.wrapper');
     wrapper.style.display = 'none';
+
+
 });
 
 document.querySelector('.register-link').addEventListener('click', function (e) {
@@ -117,3 +119,38 @@ document.querySelector('.register-linkk').addEventListener('click', function (e)
 
     document.querySelector('.wrapper').style.height = '500px';
 });
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const loginBtn = document.getElementById("login");
+  const wrapper = document.querySelector(".wrapper");
+
+  loginBtn.addEventListener("click", function (e) {
+    e.preventDefault();
+
+    // Apply popup styles directly via JS
+    wrapper.style.display = "block";
+    wrapper.style.position = "fixed";
+    wrapper.style.top = "50%";
+    wrapper.style.left = "50%";
+    wrapper.style.transform = "translate(-50%, -50%)";
+    wrapper.style.zIndex = "1000";
+    wrapper.style.backgroundColor = "white";
+    
+    wrapper.style.boxShadow = "0 8px 16px rgba(0,0,0,0.25)";
+    
+    
+
+    document.querySelector('.form-box').style.display = 'block';
+  
+    // Show register form
+    document.querySelector('.formboxrg').style.display = 'none';
+
+    document.querySelector('.wrapper').style.height = '500px';
+
+    
+  });
+});
+
